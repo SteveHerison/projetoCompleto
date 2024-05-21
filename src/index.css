@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Main {
+  height: calc(100% - 29% - 5rem);
+}
