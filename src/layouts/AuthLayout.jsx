@@ -1,8 +1,9 @@
+import { Outlet } from "react-router-dom";
 import backgroundImage from "../../images/pattern-hills.svg";
 import backgroundEster from "../../images/bg-stars.svg";
 import Header from "../components/Header";
 
-const App = () => {
+const AuthLayout = () => {
   return (
     <main
       className="h-full w-full"
@@ -14,7 +15,9 @@ const App = () => {
         position: "relative",
       }}>
       <Header />
-
+      <div className="Main">
+        <Outlet />
+      </div>
       <div
         className="absolute  w-full bg-no-repeat bg-bottom "
         style={{
@@ -27,4 +30,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AuthLayout;

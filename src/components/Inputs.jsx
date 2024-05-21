@@ -6,7 +6,6 @@ const Inputs = ({ id, value, setValue, label, ...rest }) => {
       </label>
       <input
         type="text"
-        name={id}
         value={value}
         onChange={({ target }) => setValue(target.value)}
         id={id}
